@@ -1,0 +1,7 @@
+name: lightEggHunter
+author: lightPlugins
+version: 1.0.0
+main: de.lightplugins.egghunter.EggHunter
+api-version: 1.17
+softdepend: [PlaceholderAPI]
+commands: { }

@@ -1,0 +1,32 @@
+settings:
+  eggs:
+    'villager':
+      chance:
+        normal: 50 # %
+        permissions:
+          - 'lightegghunter.moreluck;70'
+          - 'lightegghunter.insaneluck;100'
+      worldBlacklist:
+        - 'notOnThisMap'
+      amount: 1
+      events:
+        - 'title:Congratulation;You found #amount# #eggtype#'
+        - 'sound:level_up;1;1.8'
+        - 'command:say hi'
+        - 'message:You just found #amount# x #eggtype# with a chance of #percentage# %'
+        - 'actionbar: Found #amount# x #eggtype# with a chance of #percentage# %'
+    'zombie':
+      chance:
+        normal: 50 # %
+        permissions:
+          - 'lightegghunter.moreluck;70'
+          - 'lightegghunter.insaneluck;100'
+      worldBlacklist:
+        - 'notOnThisMap'
+      amount: 1
+      events:
+        - 'title:Congratulation;You found #amount# #eggtype#'
+        - 'sound:level_up;1;1.8'
+        - 'command:say hi'
+        - 'message:You just found #amount# x #eggtype# with a chance of #percentage# %'
+        - 'actionbar: Found #amount# x #eggtype# with a chance of #percentage# %'
