@@ -1,32 +1,35 @@
 settings:
+  dropSettings:
+    intoInventory: false
+    onlyOwnerCanPickup: false
+    visibleItemName:
+      enable: true
+      format: '#amount# x #eggtype#'
+    coloredItemGlow:
+      enable: true
+      defaultColor: GRAY
+  dropEggsIntoInventory: false
+  defaultEvents:
+    - 'title:Congratulation;You found #amount# x #eggtype#'
+    - 'sound:level_up;1;1.8'
+    - 'command:say hi #player#'
+    - 'particle:totem'
+    - 'message:You just found #amount# x #eggtype# with a chance of #percentage# %'
+    - 'actionbar: Found #amount# x #eggtype# with a chance of #percentage# %'
+  permissionChances:
+    'lightegghunter.mvp':
+      increaseChanceBy: 2
+    'lightegghunter.mvp++':
+      increaseChanceBy: 4
+  globalWorldBlacklist:
+    - 'my_world'
   eggs:
     'villager':
-      chance:
-        normal: 50 # %
-        permissions:
-          - 'lightegghunter.moreluck;70'
-          - 'lightegghunter.insaneluck;100'
+      chance: 50
       worldBlacklist:
-        - 'notOnThisMap'
+        - 'notInThisWorld'
+      worldGuardRegionBlacklist:
+        - 'worldGuardRegion'
       amount: 1
-      events:
-        - 'title:Congratulation;You found #amount# #eggtype#'
-        - 'sound:level_up;1;1.8'
-        - 'command:say hi'
-        - 'message:You just found #amount# x #eggtype# with a chance of #percentage# %'
-        - 'actionbar: Found #amount# x #eggtype# with a chance of #percentage# %'
-    'zombie':
-      chance:
-        normal: 50 # %
-        permissions:
-          - 'lightegghunter.moreluck;70'
-          - 'lightegghunter.insaneluck;100'
-      worldBlacklist:
-        - 'notOnThisMap'
-      amount: 1
-      events:
-        - 'title:Congratulation;You found #amount# #eggtype#'
-        - 'sound:level_up;1;1.8'
-        - 'command:say hi'
-        - 'message:You just found #amount# x #eggtype# with a chance of #percentage# %'
-        - 'actionbar: Found #amount# x #eggtype# with a chance of #percentage# %'
+      extraEvents: []
+      itemColor: GOLD
