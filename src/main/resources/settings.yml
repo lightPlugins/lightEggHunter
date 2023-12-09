@@ -5,9 +5,7 @@ settings:
     visibleItemName:
       enable: true
       format: '#amount# x #eggtype#'
-    coloredItemGlow:
-      enable: true
-      defaultColor: GRAY
+      coloredItemGlow: true
   dropEggsIntoInventory: false
   defaultEvents:
     - 'title:Congratulation;You found #amount# x #eggtype#'
@@ -25,7 +23,7 @@ settings:
     - 'my_world'
   eggs:
     'villager':
-      chance: 50
+      chance: 10
       worldBlacklist:
         - 'notInThisWorld'
       worldGuardRegionBlacklist:
