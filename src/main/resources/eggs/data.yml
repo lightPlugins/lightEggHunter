@@ -1,0 +1,6 @@
+eggs:
+  '1':
+    type: villager
+    amount: 1
+    chance: 0.20
+    permission: lightegghunter.eggs.villager

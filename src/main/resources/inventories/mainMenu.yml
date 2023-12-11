@@ -1,0 +1,20 @@
+menu:
+  title: '#ffdc73&llightEggHunter &8| &7Menu'
+  fillMaterial: black_stained_glass_pane
+  previousPageName: '#ffdc73Nächste Seite'
+  nextPageName: '#ffdc73Vorherige Seite'
+  existingEggs:
+    displayname: '#eggname#'
+    lore:
+      - '#ffdc73&lEinstellungen:'
+      - ' #ffdc73▪ &7Type: #ffdc73#eggname#'
+      - ' #ffdc73▪ &7Dropchance: #ffdc73#dropchance#'
+      - ' '
+      - '#ffdc73&lAktionen:'
+      - ' &7Rechtsklick &8-> #ffdc73Löschen'
+      - ' &7Linksklick &8-> #ffdc73Bearbeiten'
+  addButton:
+    type: gold_ingot
+    displayname: '#ffdc73Erstellen'
+    lore:
+      - '&7Erstelle einen neuen Drop'
