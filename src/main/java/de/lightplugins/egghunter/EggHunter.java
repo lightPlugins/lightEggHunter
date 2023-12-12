@@ -6,6 +6,8 @@ import io.github.rysefoxx.inventory.plugin.pagination.InventoryManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.checkerframework.checker.units.qual.C;
 
+import java.io.File;
+
 public class EggHunter extends JavaPlugin {
 
     public static final String consolePrefix = "§r[light§cEggs§r] ";
@@ -16,6 +18,7 @@ public class EggHunter extends JavaPlugin {
 
     public FileManager eggs;
     public FileManager mainMenu;
+    public FileManager editMenu;
 
 
 
@@ -25,6 +28,7 @@ public class EggHunter extends JavaPlugin {
 
         eggs = new FileManager(this, "eggs", "data.yml");
         mainMenu = new FileManager(this, "inventories", "mainMenu.yml");
+        editMenu = new FileManager(this, "inventories" , "editMenu.yml");
 
         colorTranslation = new ColorTranslation();
 

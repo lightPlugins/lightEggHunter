@@ -24,7 +24,7 @@ public class EggConfigManager {
         section.set("type", "villager");
         section.set("amount", 1);
         section.set("chance", 0.20);
-        section.set("permission" ,"lightegghunter.egg.villager");
+        section.set("inInventory", false);
 
         EggHunter.getInstance.eggs.saveConfig();
 
@@ -35,24 +35,41 @@ public class EggConfigManager {
     public void setType(String type, String id) {
         ConfigurationSection section = data.createSection(masterKey + "." + id);
         section.set("type", type);
+        EggHunter.getInstance.eggs.saveConfig();
 
     }
 
     public void setAmount(int amount, String id) {
         ConfigurationSection section = data.createSection(masterKey + "." + id);
         section.set("amount", amount);
+        EggHunter.getInstance.eggs.saveConfig();
 
     }
 
     public void setChance(double chance, String id) {
         ConfigurationSection section = data.createSection(masterKey + "." + id);
         section.set("chance", chance);
+        EggHunter.getInstance.eggs.saveConfig();
 
     }
 
-    public void setPerm(String perm, String id) {
+    public void setInventory(boolean inInventory, String id) {
         ConfigurationSection section = data.createSection(masterKey + "." + id);
-        section.set("permission", perm);
+        section.set("inInventory", inInventory);
+        EggHunter.getInstance.eggs.saveConfig();
 
+    }
+
+    public boolean getSetInventory(String key) {
+        return data.getBoolean(masterKey + "." + key + ".inInventory");
+    }
+    public double getChance(String key) {
+        return data.getDouble(masterKey + "." + key + ".chance");
+    }
+    public int getAmount(String key) {
+        return data.getInt(masterKey + "." + key + ".amount");
+    }
+    public String getType(String key) {
+        return data.getString(masterKey + "." + key + ".type");
     }
 }

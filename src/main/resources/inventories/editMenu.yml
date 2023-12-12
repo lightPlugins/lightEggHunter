@@ -1,0 +1,66 @@
+menu:
+  title: '&8#eggname#'
+  fillMaterial: black_stained_glass_pane
+  setChanceButton:
+    material: diamond
+    displayname: '#eggname#'
+    lore:
+      - '#ffdc73&lEinstellungen:'
+      - ' #ffdc73▪ &7Type: #ffdc73#eggname#'
+      - ' #ffdc73▪ &7Dropchance: #ffdc73#dropchance#'
+      - ' '
+      - '#ffdc73&lAktionen:'
+      - ' &7Rechtsklick &8-> #ffdc73Löschen'
+      - ' &7Linksklick &8-> #ffdc73Bearbeiten'
+  setInventoryButton:
+    material: diamond
+    displayname: '#eggname#'
+    lore:
+      - '#ffdc73&lEinstellungen:'
+      - ' #ffdc73▪ &7Type: #ffdc73#eggname#'
+      - ' #ffdc73▪ &7Dropchance: #ffdc73#dropchance#'
+      - ' '
+      - '#ffdc73&lAktionen:'
+      - ' &7Rechtsklick &8-> #ffdc73Löschen'
+      - ' &7Linksklick &8-> #ffdc73Bearbeiten'
+  setAmount:
+    material: diamond
+    displayname: '#eggname#'
+    lore:
+      - '#ffdc73&lEinstellungen:'
+      - ' #ffdc73▪ &7Type: #ffdc73#eggname#'
+      - ' #ffdc73▪ &7Dropchance: #ffdc73#dropchance#'
+      - ' '
+      - '#ffdc73&lAktionen:'
+      - ' &7Rechtsklick &8-> #ffdc73Löschen'
+      - ' &7Linksklick &8-> #ffdc73Bearbeiten'
+  setTypeButton:
+    material: diamond
+    displayname: '#eggname#'
+    lore:
+      - '#ffdc73&lEinstellungen:'
+      - ' #ffdc73▪ &7Type: #ffdc73#eggname#'
+      - ' #ffdc73▪ &7Dropchance: #ffdc73#dropchance#'
+      - ' '
+      - '#ffdc73&lAktionen:'
+      - ' &7Linksklick &8-> #ffdc73Bearbeiten'
+  addBlackListWorldButton:
+    material: diamond
+    displayname: '#eggname#'
+    lore:
+      - '#ffdc73&lDeaktivierte Welten:'
+      - ' #ffdc73▪ &7#blacklistedworlds#'
+      - ' '
+      - '#ffdc73&lAktionen:'
+      - ' &7Rechtsklick &8-> #ffdc73Welt entfernen'
+      - ' &7Linksklick &8-> #ffdc73Welt hinzufügen'
+  backButton:
+    material: redstone
+    displayname: '#eggname#'
+    lore:
+      - '#ffdc73&lEinstellungen:'
+      - ' #ffdc73▪ &7Type: #ffdc73#eggname#'
+      - ' #ffdc73▪ &7Dropchance: #ffdc73#dropchance#'
+      - ' '
+      - '#ffdc73&lAktionen:'
+      - ' &7Linksklick &8-> #ffdc73Bearbeiten'

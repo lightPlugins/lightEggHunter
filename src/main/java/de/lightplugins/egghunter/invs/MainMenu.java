@@ -23,7 +23,7 @@ import java.util.Objects;
 
 public class MainMenu implements InventoryProvider {
 
-    public void paginationInventory(Player player, FileConfiguration jobConfig) {
+    public void mainInventory(Player player, FileConfiguration jobConfig) {
 
 
         RyseInventory.builder()
@@ -136,9 +136,13 @@ public class MainMenu implements InventoryProvider {
                             }
 
                             eggMeta.setLore(lore);
-
                             eggItem.setItemMeta(eggMeta);
 
+                            pagination.addItem(IntelligentItem.of(eggItem, event -> {
+
+
+
+                            }));
 
 
                         }
